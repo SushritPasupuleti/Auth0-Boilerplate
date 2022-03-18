@@ -65,3 +65,9 @@ node index.js
 cd web/
 npm start
 ```
+
+## Recommended Libraries
+
+- Redux for State management. Store Access Tokens and User info in Redux store for easy access to all components.
+
+- Seqeulize as ORM for Postgres. Easy Raw Queries and well defined ORM API.
