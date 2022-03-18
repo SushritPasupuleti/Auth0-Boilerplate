@@ -51,3 +51,17 @@ Save the token to localStorage or global state and use it for all requests by pa
 ### Using Middleware
 
 Navigate to [/server/index.js](/server/index.js), `checkJWT` function can be injected as middleware in all requests to verify the passed Access Token in Authorization header.
+
+## Running the Code
+
+Ensure you have installed dependencies in both `/web` and `/server` folders with `npm install` and have set up `.env` files with the correct values as mentioned above.
+
+```bash
+cd server/
+node index.js
+```
+
+```bash
+cd web/
+npm start
+```
