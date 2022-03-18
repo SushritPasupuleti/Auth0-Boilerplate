@@ -11,7 +11,7 @@ const AuthWrapper = (props) => {
         (async () => {
             try {
                 const token = await getAccessTokenSilently({
-                    // audience: process.env.REACT_APP_API, /// <-- This is the API endpoint
+                    audience: process.env.REACT_APP_AUTH0_AUDIENCE, /// <-- This is the API endpoint
                     // scope: '', /// <-- This is the scope for the API endpoint (optional and better to skip for most cases)
                 });
                 // console.log(token);

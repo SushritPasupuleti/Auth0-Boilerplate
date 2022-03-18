@@ -43,6 +43,8 @@ const checkJwt = jwt({
 
 app.get("/api/route1", checkJwt, (req, res) => {
     /// run API related code here
+    /// fetch user based on passed user credentials like id or email and infer RBAC
+    /// conditionally enable acess
     res.send({
         msg: "Your access token was successfully validated!",
     });
