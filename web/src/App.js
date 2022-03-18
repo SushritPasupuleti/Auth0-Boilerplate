@@ -6,23 +6,14 @@ import LogoutButton from './components/LogoutButton';
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<div
-					style={{
-						display: 'flex',
-						flexDirection: 'column',
-					}}
-				>
-					<LoginButton
-						title="Click to Login"
-					/>
-					<br/>
-					<LogoutButton
-						title="Click to Logout"
-					/>
-				</div>
-			</header>
+			<div
+				style={{
+					display: 'flex',
+					flexDirection: 'column',
+				}}
+			>
+				Some interesting content...
+			</div>
 		</div>
 	);
 }
