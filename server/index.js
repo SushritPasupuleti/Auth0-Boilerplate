@@ -50,4 +50,9 @@ app.get("/api/route1", checkJwt, (req, res) => {
     });
 });
 
+app.post("/auth/login", checkJwt, (req, res) => {
+    /// create new user if not already registered
+    /// return user session info if already registered
+});
+
 app.listen(port, () => console.log(`API Server listening on port ${port}`));

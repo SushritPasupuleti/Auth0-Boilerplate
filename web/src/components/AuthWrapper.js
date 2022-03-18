@@ -23,6 +23,14 @@ const AuthWrapper = (props) => {
         })();
     }, [getAccessTokenSilently]);
 
+    useEffect(() => {
+        if (authToken) {
+            /// send a request to API to register user if new (and return info)
+            /// or return user session info if already registered.
+            /// runs only once and is useful to update login times.
+        }
+    }, [authToken]);
+
     if (isLoading) {
         return (
             <div>
