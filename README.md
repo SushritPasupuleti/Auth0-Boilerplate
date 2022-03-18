@@ -25,9 +25,9 @@ API_SECRET=
 API_AUTH0_AUDIENCE=
 ```
 
-Get values from Auth0
+Get values from Auth0 dashboard for the application.
 
-![https://cdn2.auth0.com/docs/1.12828.0/media/articles/dashboard/client_settings.png](Reference Image)
+![Reference Image](https://cdn2.auth0.com/docs/1.12828.0/media/articles/dashboard/client_settings.png "Reference Image")
 
 ## Web
 
