@@ -6,12 +6,32 @@ A minimal boilerplate for Auth0 with PERN stack
 
 > in `web/.env`
 
+Populate `.env` files with the following values.
+
 ```env
-AUTH0_DOMAIN=
-AUTH0_CLIENT_ID=
+REACT_APP_AUTH0_DOMAIN=
+REACT_APP_AUTH0_CLIENT_ID=
+REACT_APP_SECRET=
+REACT_APP_API=
+REACT_APP_AUTH0_AUDIENCE=
 ```
 
+> in `server/.env`
+
+```env
+API_AUTH0_DOMAIN=
+API_AUTH0_CLIENT_ID=
+API_SECRET=
+API_AUTH0_AUDIENCE=
+```
+
+Get values from Auth0
+
+![https://cdn2.auth0.com/docs/1.12828.0/media/articles/dashboard/client_settings.png](Reference Image)
+
 ## Web
+
+Make sure to wrap the root with Auth0Provider. Make use of Login and Logout Button components in `/components`.
 
 ### Using Access Token
 
@@ -25,3 +45,9 @@ Save the token to localStorage or global state and use it for all requests by pa
             Authorization: `Bearer ${token}`,
     },
 ```
+
+## Server
+
+### Using Middleware
+
+Navigate to [/server/index.js](/server/index.js), `checkJWT` function can be injected as middleware in all requests to verify the passed Access Token in Authorization header.
